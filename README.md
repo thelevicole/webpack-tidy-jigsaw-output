@@ -65,7 +65,7 @@ The below options can be passed to the plugin.
 
 |Key|Description|Default|
 |--|--|--|
-| [`rules`](#rules) | This is an object of rules to be used by [pretty](https://www.npmjs.com/package/pretty). | `{ collapseWhitespace: true }` |
+| [`rules`](#rules) | This is an object of rules to be used by [pretty](https://www.npmjs.com/package/pretty). | `{ ocd: true }` |
 | [`env`](#env) | Set a specific build environment for dynamically guessing the output directories. By default uses the parameter sent to webpack e.g. `npm run production` | `local` |
 | [`allowedEnvs`](#allowedenvs) | Accepts a string or array of environment names for which tidying should run. E.g. `[ 'production', 'staging' ]` will only tidy production and staging builds.  | `*` |
 | [`verbose`](#verbose) | Whether or not to print logs to the console. | `false` |
@@ -75,7 +75,7 @@ The below options can be passed to the plugin.
 ### `rules`
 
 This is an object of rules will be passed **as is** to [pretty](https://www.npmjs.com/package/pretty).
-If empty, the default value is used: `{ collapseWhitespace: true }`.
+If empty, the default value is used: `{ ocd: true }`.
 
 #### Example usage
 ```javascript
